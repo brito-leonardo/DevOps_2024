@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/python:3.8-slim-buster
+FROM public.ecr.aws/lambda/python:3.9
 
 RUN mkdir -p /app
 COPY . main.py /app/
