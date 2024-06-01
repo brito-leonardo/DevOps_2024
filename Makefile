@@ -4,7 +4,7 @@ install:
 	python -m textblob.download_corpora
 test:
 	python -m pytest -vv --cov=wikiphrases --cov=nlplogic  --cov=main test_corenlp.py
-
+	#docker run --rm -i hadolint/hadolint < Dockerfile
 format:
 	black *.py
 
